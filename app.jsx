@@ -14,11 +14,13 @@ class Model {
 		this.callback();
 	}
 	agregaLista(text) {
-		this.items.push({
-			id: Utils.uuid(),
-			text: text,
-			completo: false
-		});
+		if(this.text != ""){
+			this.items.push({
+				id: Utils.uuid(),
+				text: text,
+				completo: false
+			});
+		}
         	this.text.value = "";
 		this.notify();
 
