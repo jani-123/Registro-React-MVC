@@ -19,7 +19,7 @@ class Model {
 			text: text,
 			completo: false
 		});
-        this.text = "";
+        	this.text.value = "";
 		this.notify();
 
 	}
